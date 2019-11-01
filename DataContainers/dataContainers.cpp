@@ -6,6 +6,7 @@
 #include <list>
 #include <set>
 #include <map>
+#include <tuple>
 
 template <class T>
 void printContainers(T container)
@@ -88,6 +89,19 @@ int main()
     {
         std::cout << " " << elements.first;
     }
+    std::cout << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "==================" << std::endl;
+    std::cout << "===== tuple ======" << std::endl;
+    std::cout << "==================" << std::endl;
+
+    auto testTuple = std::make_tuple("Name", "last name", 179, 80);
+    std::cout << "First name: " << std::get<0>(testTuple) << std::endl;
+    std::cout << "Second name: " << std::get<1>(testTuple) << std::endl;
+    std::cout << "Hight: " << std::get<2>(testTuple) << std::endl;
+    std::cout << "Weight: " << std::get<3>(testTuple) << std::endl;
+    std::cout << "Size of record: " << std::tuple_size<decltype(testTuple)>::value << std::endl;
 
     return 0;
 }
