@@ -1,6 +1,11 @@
 #include <iostream>
 #include <memory>
 
+namespace myNamspace
+{
+
+} // namespace myNamspace
+
 class testClass
 {
 public:
