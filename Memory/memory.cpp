@@ -23,6 +23,7 @@ private:
 
 int main()
 {
+
     // alocate on stack (stos)
     {
         int variable = 12;
